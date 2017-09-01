@@ -1,7 +1,7 @@
 {
-  "name": "new-project",
-  "version": "0.0.2",
-  "description": "assembly for a new project",
+  "name": "barbershop-adaptive",
+  "version": "0.1.0",
+  "description": "",
   "main": "gulpfile.js",
   "author": "dimavoid",
   "license": "ISC",
