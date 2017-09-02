@@ -1,0 +1,11 @@
+.page-header {
+
+}
+
+.page-header__logo {
+  @include container;
+    img {
+      width: 226px;
+      height: 30px;
+    }
+}
