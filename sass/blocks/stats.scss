@@ -1,0 +1,148 @@
+.stats {
+  @media ($tablet-widths) {
+    @include container;
+  }
+  @media ($desktop-widths) {
+    display: flex;
+  }
+}
+
+.stats__header {
+  @include container;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  padding-bottom: 30px;
+    @media ($tablet-widths) {
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      text-align: left;
+    }
+    @media ($desktop-widths) {
+      width: 33.3%;
+      padding: 0;
+    }
+}
+
+.stats__slogan {
+  display: inline-block;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  margin: 30px 0;
+    @media ($tablet-widths) {
+      width: 50%;
+      padding: 0 6.25%;
+    }
+    @media ($desktop-widths) {
+      width: 100%;
+      padding: 0 12.55%;
+    }
+}
+
+.stats__intro {
+  font-size: 20px;
+  margin: 0;
+    @media ($tablet-widths) {
+      width: 50%;
+      padding: 30px 5.45%;
+      padding-right: 12.25%;
+    }
+    @media ($desktop-widths) {
+      width: 100%;
+      padding: 0 12.5%;
+      padding-bottom: 30px;
+    }
+}
+
+.stats__legend--top {
+  display: none;
+    @media ($tablet-widths) {
+      display: block;
+      padding: 0 6.25%;
+      padding-bottom: 30px;
+      font-size: 20px;
+      line-height: 20px;
+      color: rgba(0, 0, 0, 0.4);
+    }
+    @media ($desktop-widths) {
+      width: 100%;
+      padding: 0 12.5%;
+      padding-bottom: 30px;
+    }
+}
+
+.stats__items {
+  width: 100%;
+    @media ($tablet-widths) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @media ($desktop-widths) {
+      width: 66.6%;
+    }
+}
+
+.stats__row {
+  display: flex;
+    &:first-child,
+    &:last-child {
+      background-color: #404040;
+    }
+    &:nth-child(2) {
+      background-color: #4e4e4e;
+    }
+    &:nth-child(3) {
+      background-color: #353535;
+    }
+    @media ($tablet-widths) {
+      flex-wrap: wrap;
+      width: 50%;
+    }
+}
+
+.stats__value {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 700;
+  width: 60%;
+  margin: 0;
+  padding: 24px 0;
+  padding-left: 6.25%;
+    @media ($tablet-widths) {
+      width: 100%;
+      padding: 0 10.9%;
+      padding-top: 30px;
+    }
+}
+
+.stats__field {
+  font-size: 18px;
+  line-height: 18px;
+  width: 40%;
+  margin: 0;
+  padding: 24px 0;
+  padding-right: 6.25%;
+  text-align: right;
+    @media ($tablet-widths) {
+      width: 100%;
+      text-align: left;
+      padding: 0 10.9%;
+      padding-bottom: 30px;
+    }
+}
+
+.stats__legend--bottom {
+  display: block;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  background-color: #242424;
+  color: rgba(255, 255, 255, 0.3);
+  padding-top: 15px;
+  padding-bottom: 45px;
+    @media ($tablet-widths) {
+      display: none;
+    }
+}

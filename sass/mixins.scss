@@ -1,11 +1,32 @@
+// @mixin container {
+//   width: 280px;
+//   margin: 0 auto;
+//   padding: 0 20px;
+//     @media ($tablet-widths) {
+//       width: 640px;
+//     }
+//     @media ($desktop-widths) {
+//       width: 960px;
+//     }
+// }
+
 @mixin container {
-  width: 280px;
-  margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 6.25%;
     @media ($tablet-widths) {
-      width: 640px;
+      padding: 0 8.4%;
     }
     @media ($desktop-widths) {
-      width: 960px;
+      padding: 0 10%;
     }
+}
+
+@mixin reset-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin reset-links {
+  color: #fff;
+  text-decoration: none;
 }

@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Барбершоп «Бородинский»</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
@@ -10,9 +11,9 @@
   <body>
     <header class="page-header">
       <div class="page-header__logo">
-        <img src="img/logo.svg" alt="Барбершоп «Бородинский»" width="370" height="153">
+        <img src="img/logo.svg" alt="Барбершоп «Бородинский»" width="226" height="30">
       </div>
-      <nav class="main-nav  main-nav--closed">
+      <nav class="main-nav  main-nav--closed  main-nav--nojs">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__items">
@@ -36,29 +37,29 @@
           <p class="stats__intro">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
           <small class="stats__legend stats__legend--top"><sup>*</sup> — приведенные данные ложь</small>
         </header>
-        <table class="stats__items">
-            <tr>
-              <td class="stats__value">1 500<sup>*</sup></td>
-              <td class="stats__field">рублей вложений</td>
-            </tr>
-            <tr>
-              <td class="stats__value">7 200</td>
-              <td class="stats__field">секунд времени мастера</td>
-            </tr>
-            <tr>
-              <td class="stats__value">90 000</td>
-              <td class="stats__field">постриженных волос</td>
-            </tr>
-            <tr>
-              <td class="stats__value">500 000<sup>*</sup></td>
-              <td class="stats__field">лайков и комплиментов</td>
-            </tr>
-        </table>
+        <section class="stats__items">
+            <div class="stats__row">
+              <p class="stats__value">1 500<sup>*</sup></p>
+              <p class="stats__field">рублей вложений</p>
+            </div>
+            <div class="stats__row">
+              <p class="stats__value">7 200</p>
+              <p class="stats__field">секунд времени мастера</p>
+            </div>
+            <div class="stats__row">
+              <p class="stats__value">90 000</p>
+              <p class="stats__field">постриженных волос</p>
+            </div>
+            <div class="stats__row">
+              <p class="stats__value">500 000<sup>*</sup></p>
+              <p class="stats__field">лайков и комплиментов</p>
+            </div>
+        </section>
         <small class="stats__legend stats__legend--bottom"><sup>*</sup> — приведенные данные ложь</small>
       </section>
 
       <section class="advantages">
-        <div class="advantages__wrapper slider">
+        <div class="advantages__wrapper  slider">
           <input class="slider__input" type="radio" name="advantages" id="advantages-input-1" checked>
           <input class="slider__input" type="radio" name="advantages" id="advantages-input-2">
           <input class="slider__input" type="radio" name="advantages" id="advantages-input-3">
@@ -89,15 +90,15 @@
           <h2 class="news__title">Новости и акции</h2>
           <ul class="news__items">
             <li class="news__item">
-              <time class="news__date" datetime="2015-09-29"><b>29</b> сент</time>
+              <time class="news__date" datetime="2015-09-29"><b>29</b><br> сент</time>
               <p>Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во время стрижки.</p>
             </li>
             <li class="news__item">
-              <time class="news__date" datetime="2015-09-19"><b>9</b> сент</time>
+              <time class="news__date" datetime="2015-09-19"><b>19</b><br> сент</time>
               <p>В нашей команде пополнение, Борис «Бритва» Стригунец, пополнил наши стройные ряды. Спешите записаться!</p>
             </li>
             <li class="news__item">
-              <time class="news__date" datetime="2015-09-09"><b>9</b> сент</time>
+              <time class="news__date" datetime="2015-09-09"><b>9</b><br> сент</time>
               <p>Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чем здесь подвох!</p>
             </li>
           </ul>
@@ -134,22 +135,27 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <p class="page-footer__contacts">
-          <b>Барбершоп «Бородинский»</b><br>
-          г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
+        <div class="page-footer__contacts">
+          <p>
+            <b>Барбершоп «Бородинский»</b><br>
+            г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
+          </p>
           <a href="tel:+78125556666"><span class="page-footer__contacts-hidden">Тел.:</span> +7 (812) 555-66-66</a>
-        </p>
-        <p class="page-footer__social">
-          <span class="social-links">
+        </div>
+        <div class="page-footer__social">
+          <div class="social-links">
+            <p>Давайте дружить!</p>
             <a class="social-link  social-link--vk" href="">Мы в Вконтакте</a>
             <a class="social-link  social-link--fb" href="">Мы в Фейсбуке</a>
             <a class="social-link  social-link--in" href="">Мы в Инстаграме</a>
-          </span>
-        </p>
-        <p class="page-footer__copyright">
-          Разработано: <a class="btn  page-footer__copyright-link" href="">HTML Academy</a>
-        </p>
+          </div>
+        </div>
+        <div class="page-footer__copyright">
+          <p>Разработано:</p>
+          <a class="btn  page-footer__copyright-link" href="">HTML Academy</a>
+        </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

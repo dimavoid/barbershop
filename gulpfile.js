@@ -79,6 +79,8 @@ gulp.task("serve", ["style"], function() { // выводим верстку в �
   gulp.watch("sass/**/*.scss", ["style"]); // следит за изменениями во всех файлах *.scss в папке sass
   gulp.watch ("*.html") // следит за изменениями в html
     .on("change", server.reload);
+  gulp.watch ("js/**/*.js") // следит за изменениями в js
+    .on("change", server.reload);
 });
 
 gulp.task("build", function(fn) {

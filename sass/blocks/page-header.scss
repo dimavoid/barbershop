@@ -1,11 +1,40 @@
 .page-header {
-
+  background-color: #242424;
+  text-align: center;
+    @media ($tablet-widths) {
+      display: flex;
+      padding-bottom: 215px;
+      background-color: transparent;
+    }
+    @media ($desktop-widths) {
+      padding-bottom: 490px;
+    }
 }
 
 .page-header__logo {
-  @include container;
+  padding: 25px;
+  line-height: 0;
     img {
+      line-height: 27px;
       width: 226px;
       height: 30px;
+    }
+    @media ($tablet-widths) {
+      padding: 0;
+      position: absolute;
+      left: 50%;
+      top: 110px;
+      transform: translateX(-50%);
+        img {
+          width: 370px;
+          height: 101px;
+        }
+    }
+    @media ($desktop-widths) {
+      top: 130px;
+        img {
+          width: 370px;
+          height: 153px;
+        }
     }
 }
