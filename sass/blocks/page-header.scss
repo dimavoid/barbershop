@@ -1,39 +1,51 @@
 .page-header {
-  text-align: center;
-    @media ($tablet-widths) {
-      display: flex;
-      padding-bottom: 470px;
-      background-color: transparent;
-    }
-    @media ($desktop-widths) {
-      padding-bottom: 720px;
-    }
+  // outline: 1px solid red;
 }
 
 .page-header__logo {
-  padding: 27px;
-  line-height: 0;
+  text-align: center;
+}
+
+@media ($mobile-widths-only) {
+  .page-header__logo {
+    padding: 24px;
     img {
-      line-height: 27px;
       width: 226px;
       height: 30px;
     }
-    @media ($tablet-widths) {
-      padding: 0;
-      position: absolute;
-      left: 50%;
-      top: 110px;
-      transform: translateX(-50%);
-        img {
-          width: 370px;
-          height: 101px;
-        }
-    }
-    @media ($desktop-widths) {
-      top: 130px;
-        img {
-          width: 370px;
-          height: 153px;
-        }
-    }
+  }
+}
+
+@media ($tablet-widths) {
+  .page-header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 251px;
+    background-image: url("../img/bg-tablet.jpg");
+    background-position: center top;
+  }
+
+  .page-header__logo {
+    order: 1;
+    margin-top: 39px;
+      img {
+        width: 370px;
+        height: 101px;
+      }
+  }
+}
+
+@media ($desktop-widths) {
+  .page-header {
+    padding-bottom: 431px;
+    background-image: url("../img/bg-desktop.jpg");
+  }
+
+  .page-header__logo {
+    margin-top: 57px;
+      img {
+        width: 370px;
+        height: 153px;
+      }
+  }
 }

@@ -33,7 +33,7 @@
       width: 100%;
       font-weight: 700;
       padding: 10px 0;
-      @include reset-links;
+      @include reset-link;
       border-top: 1px solid #3e3e3e;
       border-bottom: 1px solid #3e3e3e;
     }
