@@ -1,9 +1,8 @@
 .page-header {
-  background-color: #242424;
   text-align: center;
     @media ($tablet-widths) {
       display: flex;
-      padding-bottom: 215px;
+      padding-bottom: 470px;
       background-color: transparent;
     }
     @media ($desktop-widths) {
@@ -12,7 +11,7 @@
 }
 
 .page-header__logo {
-  padding: 25px;
+  padding: 27px;
   line-height: 0;
     img {
       line-height: 27px;
