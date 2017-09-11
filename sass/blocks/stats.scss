@@ -21,7 +21,6 @@
 }
 
 .stats__row {
-
     &:first-child,
     &:last-child {
       background-color: #404040;
@@ -57,6 +56,7 @@
     margin: 0 11.875%;
     padding: 25px 0 0 0;
     margin-bottom: 20px;
+    text-transform: uppercase;
   }
 
   .stats__intro {
@@ -91,6 +91,7 @@
 
   .stats__field {
     text-align: right;
+    text-indent: 25px;
   }
 
   .stats__legend--bottom {
@@ -106,16 +107,28 @@
   .stats {
     @include container;
     background-color: #353535;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .stats__header {
+    position: relative;
     min-width: 640px;
     max-width: 640px;
     margin: 0 auto;
-    margin-top: -185px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: -185px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 27px;
+        left: -15px;
+        border: 15px solid transparent;
+        border-bottom-color: #fff;
+        transform: rotate(45deg);
+      }
   }
 
   .stats__slogan {
@@ -173,6 +186,7 @@
 @media ($desktop-widths) {
   .stats {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
   }
 
@@ -180,6 +194,10 @@
     min-width: 320px;
     max-width: 320px;
     margin: 0;
+    margin-top: -160px;
+      &::before {
+        top: 22px;
+      }
   }
 
   .stats__slogan {
@@ -198,5 +216,6 @@
 
   .stats__items {
     margin: 0;
+    margin-top: -160px;
   }
 }

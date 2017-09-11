@@ -437,17 +437,30 @@ img {
         top: 28px; }
   .stats {
     padding: 0 6.25%;
-    background-color: #353535; }
+    background-color: #353535;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap; }
   .stats__header {
+    position: relative;
     min-width: 640px;
     max-width: 640px;
     margin: 0 auto;
-    margin-top: -185px;
     display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
     -webkit-box-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    margin-top: -185px; }
+    .stats__header::before {
+      content: "";
+      position: absolute;
+      top: 27px;
+      left: -15px;
+      border: 15px solid transparent;
+      border-bottom-color: #fff;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
   .stats__slogan {
     min-width: 320px;
     max-width: 320px;
@@ -636,7 +649,7 @@ img {
       padding: 0 8.4%; } }
   @media (min-width: 1200px) {
     .page-header {
-      padding-bottom: 490px; }
+      padding-bottom: 720px; }
     .page-header__logo {
       top: 130px; }
       .page-header__logo img {
@@ -669,12 +682,16 @@ img {
   .stats {
     display: -webkit-box;
     display: flex;
+    flex-wrap: nowrap;
     -webkit-box-pack: center;
             justify-content: center; }
   .stats__header {
     min-width: 320px;
     max-width: 320px;
-    margin: 0; }
+    margin: 0;
+    margin-top: -160px; }
+    .stats__header::before {
+      top: 22px; }
   .stats__slogan {
     padding: 35px 42px 25px 42px; }
   .stats__intro {
@@ -684,7 +701,8 @@ img {
     margin-top: 0px;
     margin-bottom: 8px; }
   .stats__items {
-    margin: 0; }
+    margin: 0;
+    margin-top: -160px; }
     .advantages__items {
       display: -webkit-box;
       display: flex;
@@ -832,7 +850,8 @@ img {
     font-size: 30px;
     margin: 0 11.875%;
     padding: 25px 0 0 0;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    text-transform: uppercase; }
   .stats__intro {
     margin: 0 11.875%;
     padding: 0 0 25px 0; }
@@ -854,7 +873,8 @@ img {
     min-width: 60%;
     font-size: 40px; }
   .stats__field {
-    text-align: right; }
+    text-align: right;
+    text-indent: 25px; }
   .stats__legend--bottom {
     display: block;
     padding: 0 6.25%;
