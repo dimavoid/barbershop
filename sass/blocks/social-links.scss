@@ -14,6 +14,7 @@
   width: 33.333%;
   height: 101px;
   border: 1px solid #3f3f3f;
+  transition: 0.5s;
     &::before {
       content: "";
       display: block;
@@ -25,6 +26,14 @@
       height: 10px;
       background-color: red;
       opacity: 0.3;
+    }
+    &:hover {
+      border-color: #545454;
+    }
+    &:active {
+      border-color: #252525;
+      background-color: #252525;
+      color: #808080;
     }
 }
 

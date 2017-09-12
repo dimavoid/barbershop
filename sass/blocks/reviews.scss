@@ -14,8 +14,19 @@
   margin: 0;
 }
 
-.reviews__item {
+.reviews__items {
   position: relative;
+}
+
+.reviews__item {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(-300%);
+  transition: 1.5s;
   margin: 0;
     p {
       margin: 0;
@@ -24,6 +35,9 @@
 
 .reviews__author-foto {
   position: absolute;
+    img {
+      overflow: hidden;
+    }
 }
 
 .reviews__author-name {
@@ -50,6 +64,7 @@
   }
 
   .reviews__items {
+    min-height: 140px;
     margin: 0 6.25%;
     margin-bottom: 25px;
   }
@@ -95,7 +110,6 @@
   }
 
   .reviews__items {
-    width: 100%;
     margin-top: 35px;
     display: flex;
     justify-content: space-between;
@@ -131,8 +145,9 @@
     text-align: center;
     width: 50px;
     border: 1px solid #e5ddd5;
-    background-color: transparent;
+    background-color: #f8f5f2;
     cursor: pointer;
+    transition: 0.5s;
       &::before {
         content: "";
         position: absolute;
@@ -143,6 +158,14 @@
         border: 8px solid #000;
         border-top-color: transparent;
         border-bottom-color: transparent;
+        transition: 0.5s;
+      }
+      &:hover {
+        border-color: #d5c9bd;
+      }
+      &:active {
+        border-color: #d5c9bd;
+        background-color: #d5c9bd;
       }
   }
 
@@ -152,12 +175,18 @@
         border-right-color: transparent;
         left: 17px;
       }
+      &:active::before {
+        border-left-color: #958c84;
+      }
   }
 
   .reviews__prev {
       &::before {
         border-left-color: transparent;
         left: 7px;
+      }
+      &:active::before {
+        border-right-color: #958c84;
       }
   }
 

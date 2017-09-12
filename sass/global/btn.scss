@@ -9,4 +9,13 @@
   padding: 12px 0;
   border: 1px solid #e5ddd5;
   color: #000;
+  transition: 0.5s;
+    &:hover {
+      border-color: #d5cabe;
+    }
+    &:active {
+      border-color: #d5c9bd;
+      background-color: #d5c9bd;
+      color: #958c84;
+    }
 }

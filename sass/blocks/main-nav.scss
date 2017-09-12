@@ -15,6 +15,7 @@
     a {
       font-weight: 700;
       text-transform: uppercase;
+      transition: 0.5s;
     }
 }
 
@@ -23,6 +24,7 @@
     .main-nav__user-login {
       position: relative;
       padding-left: 49px;
+      transition: 0.5s;
         &::before {
           content: "";
           position: absolute;
@@ -59,6 +61,7 @@
     background-color: #6a4d38;
     border: none;
     cursor: pointer;
+    transition: 0.5s;
       &:hover {
         background-color: #624530;
       }
@@ -90,6 +93,15 @@
   .main-nav__user-item {
     a {
       padding: 12px 21px;
+        &:hover {
+          background-color: #755a46;
+          border-top-color: #755a46;
+        }
+        &:active {
+          color: rgba(255, 255, 255, 0.3);
+          background-color: #6a4d38;
+          border-top-color: #6a4d38;
+        }
     }
   }
 
@@ -108,6 +120,7 @@
           0 16px 00 #fff;
       }
       &:active::before {
+        transition: 0.5s;
         background-color: rgba(255, 255, 255, 0.3);
         box-shadow:
           0 8px 00 rgba(255, 255, 255, 0.3),
@@ -130,6 +143,7 @@
           height: 2px;
           background-color: #fff;
           box-shadow: none;
+          transition: 0.5s;
         }
         &::before {
           transform: rotate(45deg);

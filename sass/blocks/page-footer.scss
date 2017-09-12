@@ -27,7 +27,16 @@
 }
 
 .page-footer__copyright-link {
+  border-color: #3f3f3f;
   color: #fff;
+    &:hover {
+      border-color: #545454;
+    }
+    &:active {
+      border-color: #252525;
+      background-color: #252525;
+      color: #808080;
+    }
 }
 
 @media ($mobile-widths-only) {
@@ -57,8 +66,17 @@
         text-transform: uppercase;
         padding: 13px 0;
         margin: 0 6.25%;
-        border: 1px solid #e5ddd5;
+        border: 1px solid #3e3e3e;
         color: #fff;
+        transition: 0.5s;
+          &:hover {
+            border-color: #545454;
+          }
+          &:active {
+            border-color: #252525;
+            background-color: #252525;
+            color: #808080;
+        }
       }
   }
 
