@@ -1,0 +1,12 @@
+.btn {
+  @include reset-link;
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 12px 0;
+  border: 1px solid #e5ddd5;
+  color: #000;
+}

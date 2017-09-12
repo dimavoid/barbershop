@@ -4,14 +4,14 @@ body {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   color: #f7f4f1;
   font-style: normal;
-  background-color: $bg-darkgrey;
+  background-color: #353535;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 img {
   max-width: 100%;
   height: auto;
-}
-
-* {
-  box-sizing: border-box;
 }

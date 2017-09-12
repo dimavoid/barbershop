@@ -1,138 +1,124 @@
-.page-footer__wrapper {
-  text-align: center;
-  padding-top: 70px;
-    @media ($tablet-widths) {
-      @include container;
-      text-align: left;
-      display: flex;
-      flex-wrap: wrap;
-      margin-top: 50px;
-      justify-content: space-between;
-    }
-    @media ($desktop-widths) {
-      flex-wrap: nowrap;
-      margin-bottom: 60px;
+.page-footer {
+  background-color: #292929;
+}
 
-    }
+.page-footer__wrapper {
+  @include container;
 }
 
 .page-footer__contacts {
-  @include container;
-  margin-bottom: 25px;
     b {
       display: inline-block;
-      margin-bottom: 10px;
     }
     p {
-      padding: 0;
-      margin: 0 12.5%;
-      margin-bottom: 15px;
+      margin: 0;
     }
     a {
-      display: inline-block;
-      width: 100%;
-      font-weight: 700;
-      padding: 10px 0;
       @include reset-link;
-      border-top: 1px solid #3e3e3e;
-      border-bottom: 1px solid #3e3e3e;
-    }
-    span {
-      display: none;
-    }
-    @media ($tablet-widths) {
-      padding: 0;
-      margin: 0;
-        p {
-          margin: 0;
-        }
-        b {
-          display: inline-block;
-          margin-bottom: 15px;
-        }
-        a {
-          border: none;
-          font-weight: 400;
-          padding: 0;
-        }
-        span {
-          display: inline-block;
-        }
-    }
-    @media ($desktop-widths) {
-      padding: 0;
-      margin: 0;
-      width: 321px;
-    }
-}
-
-.page-footer__social {
-  margin-bottom: 30px;
-    @media ($tablet-widths) {
-      order: 1;
-      width: 100%;
-      margin-top: 50px;
-      margin-bottom: 55px;
-    }
-    @media ($desktop-widths) {
-      order: 0;
-      margin: 0;
-      width: 320px;
-      display: flex;
-      justify-content: center;
-    }
-}
-
-.social-links {
-  display: flex;
-  justify-content: center;
-    p {
-      display: none;
-    }
-    @media ($desktop-widths) {
-      width: 162px;
-      justify-content: space-between;
-      flex-wrap: wrap;
-        p {
-          display: block;
-          padding: 0;
-          margin: 0;
-          margin-bottom: 15px;
-          text-align: center;
-          width: 100%;
-        }
-    }
-}
-
-.social-link {
-  text-align: center;
-  width: 108px;
-  height: 101px;
-  border: 1px solid #3e3e3e;
-    @media ($tablet-widths) {
-      width: 214px;
-    }
-    @media ($desktop-widths) {
-      width: 50px;
-      height: 50px;
     }
 }
 
 .page-footer__copyright {
-  @include container;
-  padding-bottom: 25px;
     p {
-      margin: 0;
-      margin-bottom: 15px;
-      padding: 0;
-    }
-    @media ($tablet-widths) {
       text-align: center;
-      padding: 0;
+      margin: 0;
+      margin-bottom: 10px;
     }
-    @media ($desktop-widths) {
-      padding: 0;
-      width: 319px;
-      text-align: right;
-    }
+}
+
+.page-footer__copyright-link {
+  color: #fff;
+}
+
+@media ($mobile-widths-only) {
+  .page-footer__wrapper {
+    text-align: center;
+    padding-top: 34px;
+    padding-bottom: 24px;
+  }
+
+  .page-footer__contacts {
+    margin-bottom: 25px;
+    padding-top: 32px;
+    border-top: 1px solid #353535;
+      b {
+        margin-bottom: 15px;
+      }
+      p {
+        margin-bottom: 20px;
+        padding: 0 39px;
+      }
+      a {
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        text-transform: uppercase;
+        padding: 13px 0;
+        margin: 0 6.25%;
+        border: 1px solid #e5ddd5;
+        color: #fff;
+      }
+  }
+
+  .page-footer__contacts-hidden {
+    display: none;
+  }
+
+  .page-footer__social {
+    margin-bottom: 30px;
+  }
+
+  .page-footer__copyright-link {
+    display: block;
+    margin: 0 6.25%;
+  }
+}
+
+@media ($tablet-widths) {
+  .page-footer__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+
+  .page-footer__contacts {
+      b {
+        text-transform: uppercase;
+        margin-bottom: 5px;
+      }
+  }
+
+  .page-footer__social {
+    order: 1;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .page-footer__copyright-link {
+    width: 160px;
+  }
+}
+
+@media ($desktop-widths) {
+  .page-footer__wrapper {
+    justify-content: center;
+  }
+
+  .page-footer__contacts {
+    margin-right: 78px;
+  }
+
+  .page-footer__social {
+    order: 0;
+    width: auto;
+    margin: 0;
+  }
+
+  .page-footer__copyright {
+    margin-left: auto;
+  }
 }

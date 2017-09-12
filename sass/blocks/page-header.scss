@@ -1,5 +1,5 @@
 .page-header {
-  // outline: 1px solid red;
+  // outline: 1px solid green;
 }
 
 .page-header__logo {
@@ -8,6 +8,7 @@
 
 @media ($mobile-widths-only) {
   .page-header__logo {
+    background-color: #242424;
     padding: 24px;
     img {
       width: 226px;
@@ -20,14 +21,15 @@
   .page-header {
     display: flex;
     flex-direction: column;
-    padding-bottom: 251px;
-    background-image: url("../img/bg-tablet.jpg");
-    background-position: center top;
   }
 
   .page-header__logo {
     order: 1;
-    margin-top: 39px;
+    padding-top: 39px;
+    padding-bottom: 251px;
+    background-image: url("../img/bg-tablet.jpg");
+    background-position: center top;
+    background-size: cover;
       img {
         width: 370px;
         height: 101px;
@@ -36,13 +38,10 @@
 }
 
 @media ($desktop-widths) {
-  .page-header {
+  .page-header__logo {
+    padding-top: 57px;
     padding-bottom: 431px;
     background-image: url("../img/bg-desktop.jpg");
-  }
-
-  .page-header__logo {
-    margin-top: 57px;
       img {
         width: 370px;
         height: 153px;
