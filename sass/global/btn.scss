@@ -2,6 +2,7 @@
   @include reset-link;
   display: inline-block;
   text-align: center;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -9,7 +10,11 @@
   padding: 12px 0;
   border: 1px solid #e5ddd5;
   color: #000;
-  transition: 0.5s;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.5s,
+              border-color 0.5s,
+              color 0.5s;
     &:hover {
       border-color: #d5cabe;
     }
