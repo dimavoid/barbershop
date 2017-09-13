@@ -117,11 +117,13 @@
       &::before {
         content: "";
         position: absolute;
-        top: 27px;
-        left: -15px;
-        border: 15px solid transparent;
-        border-bottom-color: #fff;
-        transform: rotate(45deg);
+        left: -21px;
+        top: 42px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 23px 23px 0;
+        border-color: transparent #fff transparent transparent;
       }
   }
 
@@ -190,7 +192,7 @@
     justify-content: space-between;
     margin-top: -160px;
       &::before {
-        top: 22px;
+        top: 37px;
       }
   }
 

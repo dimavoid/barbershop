@@ -49,6 +49,10 @@
 }
 
 @media ($mobile-widths-only) {
+  .reviews {
+    @include triangle-down(34px, #f8f5f2);
+  }
+
   .reviews__wrapper {
     padding-top: 30px;
     padding-bottom: 19px;
@@ -148,16 +152,19 @@
     background-color: #f8f5f2;
     cursor: pointer;
     transition: 0.5s;
+    z-index: 5;
       &::before {
         content: "";
         position: absolute;
         width: 0px;
         height: 0px;
         top: 50%;
+        left: 50%;
         transform: translateY(-50%);
-        border: 8px solid #000;
-        border-top-color: transparent;
-        border-bottom-color: transparent;
+        transform: translateX(-50%);
+        border-top: 6px solid transparent;
+        border-bottom: 6px solid transparent;
+
         transition: 0.5s;
       }
       &:hover {
@@ -172,8 +179,7 @@
   .reviews__next {
     order: 2;
       &::before {
-        border-right-color: transparent;
-        left: 17px;
+        border-left: 12px solid #000;
       }
       &:active::before {
         border-left-color: #958c84;
@@ -182,8 +188,7 @@
 
   .reviews__prev {
       &::before {
-        border-left-color: transparent;
-        left: 7px;
+      	border-right: 12px solid #000;
       }
       &:active::before {
         border-right-color: #958c84;

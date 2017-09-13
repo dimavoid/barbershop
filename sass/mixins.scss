@@ -21,3 +21,27 @@
   color: #fff;
   text-decoration: none;
 }
+
+@mixin triangle-down($height, $color) {
+  position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+    	bottom: -$height;
+    	display: block;
+    	width: 50%;
+    	height: $height;
+      left: 0;
+      background: linear-gradient(to bottom left, $color 49.2%, transparent 50.7%);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+    	bottom: -$height;
+    	display: block;
+    	width: 50%;
+    	height: $height;
+      right: 0;
+      background: linear-gradient(to bottom right, $color 49.2%, transparent 50.7%);
+    }
+}
