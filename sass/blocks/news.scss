@@ -42,9 +42,15 @@
     &:hover ~ .news__date {
       background-color: #826550;
     }
+    &:hover ~ .news__date::before {
+    	border-top-color: #826550;
+    }
     &:active ~ .news__date {
       background-color: #6a4d38;
       color: #a09187;
+    }
+    &:active ~ .news__date::before {
+    	border-top-color: #6a4d38;
     }
 }
 
@@ -71,6 +77,7 @@
       border-left: 25px solid transparent;
     	border-right: 25px solid transparent;
     	border-top: 11px solid #000;
+      transition: 0.5s;
     }
     b {
       font-size: 30px;
