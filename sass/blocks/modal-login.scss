@@ -8,7 +8,7 @@
   position: fixed;
   top: 135px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-200%);
   box-shadow: 0 0 50px -5px rgba(0, 0, 0, 0.75);
   z-index: 20;
     h2 {
@@ -149,6 +149,39 @@
   display: none;
 }
 
+@keyframes bounce {
+  0% { transform: translateX(-50%) translateY(-250%); }
+  100% { transform: translateX(-50%) translateY(0); }
+}
+
+.modal-login--show {
+  animation: bounce 0.6s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bounce-return {
+  0% { transform: translateX(-50%) translateY(0); }
+  100% { transform: translateX(-50%) translateY(-250%); }
+}
+
+.modal-login--hide {
+  animation: bounce-return 0.6s;
+}
+
+@keyframes shake {
+  0% 100% { transform:  translateX(-50%); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-55%); }
+  20%, 40%, 60%, 80% { transform: translateX(-45%); }
+}
+
+.modal-login--error {
+  animation: shake 0.6s;
+  transform: translateX(-50%) translateY(0);
+}
+
+.modal-login--static {
+  transform: translateX(-50%) translateY(0);
+}
 
 @media ($mobile-widths-only) {
   .modal-login {
