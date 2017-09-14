@@ -45,3 +45,27 @@
       background: linear-gradient(to bottom right, $color 49.2%, transparent 50.7%);
     }
 }
+
+@mixin triangle-page-header--inner($height, $color) {
+  position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+    	bottom: 0;
+    	display: block;
+    	width: 50%;
+    	height: $height;
+      left: 0;
+      background: linear-gradient(to bottom left, transparent 49.2%, $color 50.7%);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+    	bottom: 0;
+    	display: block;
+    	width: 50%;
+    	height: $height;
+      right: 0;
+      background: linear-gradient(to bottom right, transparent 49.2%, $color 50.7%);
+    }
+}

@@ -14,6 +14,7 @@
     h2 {
       margin: 0;
       line-height: 100%;
+      text-transform: uppercase;
     }
     p {
       margin: 0;
@@ -21,128 +22,37 @@
 }
 
 .modal-login__form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-}
-
-.modal-login__user,
-.modal-login__password {
-  position: relative;
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
-  font-size: 18px;
-  color: #000;
-  width: 100%;
-  border: 1px solid #e5ddd5;
-  padding: 14px 16px;
-  padding-right: 52px;
-  background-color: #fff;
-    &:hover {
-      border-color: #d5cabe;
+    input[name="login"],
+    input[name="password"] {
+      position: relative;
+      width: 100%;
+      padding-right: 52px;
     }
-    &:focus {
-      border-color: #999999;
-      outline-color: #999999;
-    }
-}
-
-.modal-login__user::placeholder,
-.modal-login__password::placeholder {
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 27px;
-  color: #000;
-}
-
-.modal-login__user {
-  margin-bottom: 6px;
-}
-
-.modal-login__password {
-  margin-bottom: 26px;
 }
 
 .modal-login__remember {
   position: relative;
   width: 60%;
+  margin-top: 26px;
   margin-bottom: 29px;
+  padding-top: 3px;
+  padding-bottom: 3px;
   padding-left: 48px;
+  line-height: 30px;
   cursor: pointer;
     input {
       display: none;
     }
 }
 
-.checkbox-indicator {
-  position: absolute;
-  display: block;
-  left: 0;
-  top: -4px;
-  width: 33px;
-  height: 33px;
-  background-color: #fff;
-  border: 1px solid #e5ddd5;
-  cursor: pointer;
-  transition: 0.5s;
-    &::before {
-      content: "";
-      display: block;
-      visibility: hidden;
-      top: 0px;
-      left: 0px;
-      width: 8px;
-      height: 14px;
-      border: 3px solid #000;
-      border-top: none;
-      border-left: none;
-      transform: rotate(45deg) translateX(10px) translateY(-3px);
-      opacity: 0;
-      transition: 0.5s;
-    }
-    &:hover {
-      border-color: #d5cabe;
-    }
-}
-
-.modal-login__remember input:checked + .checkbox-indicator {
-  border-color: #d5c9bd;
-  background-color: #d5c9bd;
-}
-
-.modal-login__remember input:checked + .checkbox-indicator::before {
-  visibility: visible;
-  opacity: 1;
-}
-
 .modal-login__restore {
   width: 40%;
   text-align: right;
-  color: #000;
+  line-height: 30px;
+  padding-top: 4px;
+  padding-bottom: 2px;
+  margin-top: 26px;
   margin-bottom: 29px;
-    &:hover {
-      color: #826550;
-    }
-    &:active {
-      color: #6a4d38;
-  }
-}
-
-.modal-login__btn-enter,
-.modal-login__btn-closed {
-  width: 130px;
-}
-
-.modal-login__btn-enter {
-  border: none;
-  background-color: #826550;
-  color: #fff;
-    &:hover {
-      background-color: #6a4d38;
-    }
-    &:active {
-      color: #978374;
-    }
 }
 
 .modal-login__text-hidden {
@@ -200,8 +110,14 @@
   }
 
   .modal-login__form {
-    margin: 0 6.25%;
+    width: 100%;
+    padding: 0 6.25%;
     margin-bottom: 37px;
+  }
+
+  .modal-login__enter,
+  .modal-login__closed {
+    width: 130px;
   }
 }
 
@@ -225,23 +141,15 @@
   .modal-login__form {
     margin: 0 70px;
     margin-bottom: 55px;
+      input[name="login"],
+      input[name="password"] {
+        font-size: 24px;
+        padding: 19px 19px;
+        padding-right: 66px;
+      }
   }
 
-  .modal-login__user,
-  .modal-login__password {
-    padding: 19px 16px;
-    padding-right: 66px;
-    font-size: 24px;
-    line-height: 30px;
-  }
-
-  .modal-login__user::placeholder,
-  .modal-login__password::placeholder {
-    font-size: 24px;
-    line-height: 30px;
-  }
-
-  .modal-login__btn-enter {
+  .modal-login__enter {
     width: 100%;
   }
 
@@ -249,7 +157,7 @@
     display: inline;
   }
 
-  .modal-login__btn-closed {
+  .modal-login__closed {
     position: absolute;
     top: 62px;
     left: 537px;

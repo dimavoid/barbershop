@@ -1,0 +1,72 @@
+@media ($mobile-widths-only) {
+  .entry__form {
+    flex-direction: column;
+    flex-wrap: nowrap;
+      > input {
+         &[name="patronymic"] {
+           margin-bottom: 32px;
+         }
+         &[type="email"] {
+           margin-bottom: 32px;
+         }
+      }
+      fieldset {
+        margin-top: 38px;
+      }
+      legend {
+        margin-bottom: 35px;
+      }
+  }
+
+  .entry__btn {
+    margin-top: 27px;
+  }
+}
+
+@media ($tablet-widths) {
+  .entry__form {
+    > input {
+        &[name="name"],
+        &[name="surname"],
+        &[name="patronymic"] {
+          width: 30.73%;
+          min-width: 212px;
+          margin-bottom: 35px;
+        }
+        &[name="tel"] {
+          width: 100%;
+          margin-bottom: 35px;
+        }
+        &[type="email"] {
+          width: 100%;
+          margin-bottom: 35px;
+        }
+    }
+    fieldset {
+      border-top: 1px solid #e5ddd5;
+      margin-top: 55px;
+    }
+    legend {
+      margin-bottom: 65px;
+      width: 370px;
+    }
+  }
+
+  .entry__btn {
+    margin-top: 12px;
+    width: 100%;
+  }
+}
+
+@media ($desktop-widths) {
+  .form {
+      > input {
+         &[name="tel"] {
+           width: 462px;
+         }
+         &[type="email"] {
+           width: 462px;
+         }
+      }
+  }
+}

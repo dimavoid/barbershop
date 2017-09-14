@@ -22,7 +22,7 @@ var popup = document.querySelector(".modal-login");
 var login = popup.querySelector("[name=login]");
 var password = popup.querySelector("[name=password]");
 var form = popup.querySelector("form");
-var close = document.querySelector(".modal-login__btn-closed");
+var close = document.querySelector(".modal-login__closed");
 var storage = localStorage.getItem("login");
 
 link.addEventListener("click", function(event) {
@@ -96,5 +96,29 @@ window.addEventListener("keydown", function(event) {
       popup.classList.remove("modal-login--static");
     // }
   }
+});
+////////////////////////////////////////////////////
+
+/////////////////////Открытие модальных окон
+var entryForm = document.querySelector(".entry__form");
+var name = entryForm.querySelector("[name=name]");
+var email = entryForm.querySelector("[name=email]");
+var modal = document.querySelector(".modal");
+var modalFail = document.querySelector(".modal--fail");
+var modalSuccess = document.querySelector(".modal--success");
+var modalClose = modal.querySelector(".modal__closed");
+
+entryForm.addEventListener("submit", function(event) {
+  if (!name.value || !email.value) {
+    event.preventDefault();
+    modalFail.classList.remove("modal--hide");
+    modalFail.classList.add("modal--show");
+  }
+});
+
+modalClose.addEventListener("click", function(event) {
+  event.preventDefault();
+  modalFail.classList.remove("modal--show");
+  modalFail.classList.add("modal--hide");
 });
 ////////////////////////////////////////////////////

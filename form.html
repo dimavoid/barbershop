@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Барбершоп «Бородинский»</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style-min.css">
+  </head>
+  <body>
+    <header class="page-header  page-header--inner">
+      <div class="page-header__logo  page-header__logo--inner">
+        <img src="img/logo.svg" alt="Барбершоп «Бородинский»" width="226" height="30">
+      </div>
+      <nav class="main-nav  main-nav--closed  main-nav--nojs">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__items">
+            <li class="main-nav__item"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a href="">Наши работы</a></li>
+            <li class="main-nav__item  main-nav__item--active"><a href="">Записаться</a></li>
+            <li class="main-nav__item"><a href="">Контакты</a></li>
+            <li class="main-nav__item"><a href="">HTML Academy</a></li>
+          </ul>
+          <ul class="main-nav__user-items">
+            <li class="main-nav__user-item"><a class="main-nav__user-login" href="">Войти</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="inner-page">
+      <header class="inner-page__header">
+        <h1 class="inner-page__title">Запись на стрижку</h1>
+        <a class="btn" href="index.html">На главную</a>
+      </header>
+      <section class="entry  inner-page__content">
+        <form class="form  entry__form" method="post">
+          <input type="text" name="name" placeholder="Имя">
+          <input type="text" name="surname" placeholder="Фамилия">
+          <input type="text" name="patronymic" placeholder="Отчество">
+          <input type="tel" name="tel" placeholder="Контактный телефон">
+          <input type="email" name="email" placeholder="Контактный e-mail">
+          <textarea name="name" rows="3" cols="40" placeholder="Доп. информация для мастера"></textarea>
+          <fieldset class="form__model-filter">
+            <legend>Выберите модель бороды:</legend>
+            <div class="form__input-container">
+              <label><input type="radio" name="beard-model" value="" checked><span class="radio-indicator"></span>Адмирал</label>
+              <label><input type="radio" name="beard-model" value=""><span class="radio-indicator"></span>Лесоруб</label>
+              <label><input type="radio" name="beard-model" value=""><span class="radio-indicator"></span>Полярник</label>
+              <label><input type="radio" name="beard-model" value=""><span class="radio-indicator"></span>Боярин</label>
+              <label><input type="radio" name="beard-model" value=""><span class="radio-indicator"></span>Мудрец</label>
+            </div>
+          </fieldset>
+          <fieldset class="form__services-filter">
+            <legend>Дополнительные услуги:</legend>
+            <div class="form__input-container">
+              <label><input type="checkbox" name="services" value="" checked><span class="checkbox-indicator"></span>Подкрасить бороду</label>
+              <label><input type="checkbox" name="services" value=""><span class="checkbox-indicator"></span>Причесать бороду</label>
+              <label><input type="checkbox" name="services" value=""><span class="checkbox-indicator"></span>Убрать седину</label>
+              <label><input type="checkbox" name="services" value="" checked><span class="checkbox-indicator"></span>Накрутить усы</label>
+              <label><input type="checkbox" name="services" value=""><span class="checkbox-indicator"></span>Подровнять виски</label>
+              <label><input type="checkbox" name="services" value=""><span class="checkbox-indicator"></span>Отполировать лысину</label>
+            </div>
+          </fieldset>
+          <button class="btn  form__btn  entry__btn" type="submit" name="send">Отправить заявку</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__contacts">
+          <b>Барбершоп «Бородинский»</b>
+          <p>г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
+          <a href="tel:+78125556666"><span class="page-footer__contacts-hidden">Тел.:</span> +7 (812) 555-66-66</a>
+        </div>
+        <div class="page-footer__social">
+          <div class="social-links">
+            <p>Давайте дружить!</p>
+            <a class="social-link  social-link--vk" href="">Мы в Вконтакте</a>
+            <a class="social-link  social-link--fb" href="">Мы в Фейсбуке</a>
+            <a class="social-link  social-link--in" href="">Мы в Инстаграме</a>
+          </div>
+        </div>
+        <div class="page-footer__copyright">
+          <p>Разработано:</p>
+          <a class="btn  page-footer__copyright-link" href="">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+
+    <section class="modal-login">
+      <h2>Личный кабинет</h2>
+      <p>Введите свой логин и пароль, чтобы войти</p>
+      <form class="form  modal-login__form" action="index.html" method="post">
+        <input class="modal-login__user" type="text" name="login" placeholder="Логин">
+        <input class="modal-login__password" type="password" name="password" placeholder="Пароль">
+        <label class="modal-login__remember"><input type="checkbox" name="remember"><span class="checkbox-indicator"></span>Запомните меня</label>
+        <a class="modal-login__restore" href="">Я забыл пароль!</a>
+        <button class="form__btn  modal-login__enter  btn" type="submit" name="button">Войти <span class="modal-login__text-hidden">в личный кабинет<span></button>
+        <button class="modal-login__closed  btn" type="button" name="button">Закрыть</button>
+      </form>
+    </section>
+
+    <section class="modal  modal--fail">
+      <h2>Неудача</h2>
+      <p>
+        Что-то пошло не так.<br>
+        Проверьте выделенные<br>
+        красным поля формы.
+      </p>
+      <button class="btn  modal__closed" type="button" name="button">Ок</button>
+    </section>
+    <section class="modal  modal--success">
+      <h2>Это успех!</h2>
+      <p>
+        Ваша заявка отправлена.<br>
+        Ожидайте, мы свяжемся с вами как только<br>
+        будет минутка.
+      </p>
+      <button class="btn  modal__closed" type="button" name="button">Закрыть окно</button>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

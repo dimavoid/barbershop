@@ -23,6 +23,10 @@
     flex-direction: column;
   }
 
+  .page-header--inner {
+    @include triangle-page-header--inner(41px, #f8f5f2);
+  }
+
   .page-header__logo {
     order: 1;
     padding-top: 39px;
@@ -35,9 +39,17 @@
         height: 101px;
       }
   }
+
+  .page-header__logo--inner {
+    padding-bottom: 73px;
+  }
 }
 
 @media ($desktop-widths) {
+  .page-header--inner {
+    @include triangle-page-header--inner(64px, #f8f5f2);
+  }
+
   .page-header__logo {
     padding-top: 57px;
     padding-bottom: 431px;
@@ -46,5 +58,9 @@
         width: 370px;
         height: 153px;
       }
+  }
+
+  .page-header__logo--inner {
+    padding-bottom: 99px;
   }
 }
