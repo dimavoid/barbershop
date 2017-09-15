@@ -114,6 +114,7 @@
   }
 
   .reviews__items {
+    width: 100%;
     margin-top: 35px;
     display: flex;
     justify-content: space-between;
@@ -123,12 +124,10 @@
 
   .reviews__item {
     order: 1;
-    flex-grow: 1;
+    // width: 100%;
     min-height: 160px;
     padding: 35px;
     padding-left: 140px;
-    // border-top: 1px solid #e5ddd5;
-    // border-bottom: 1px solid #e5ddd5;
   }
 
   .reviews__author-foto {
@@ -225,9 +224,7 @@
   .reviews__item {
     padding-left: 317px;
     margin: 0 20px;
-    border-top: 1px solid #e5ddd5;
-    border-bottom: 1px solid #e5ddd5;
-    border-right: 1px solid #e5ddd5;
+    border: 1px solid #e5ddd5;
   }
 
   .reviews__author-foto {

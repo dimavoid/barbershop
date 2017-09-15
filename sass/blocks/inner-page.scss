@@ -6,7 +6,7 @@
 }
 
 .inner-page--work {
-  z-index: 10;
+  z-index: 2;
   @include triangle-down (34px, #f8f5f2);
     @media ($tablet-widths) {
       @include triangle-down (41px, #f8f5f2);
