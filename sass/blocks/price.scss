@@ -1,0 +1,195 @@
+.price {
+  background-color: #353535;
+}
+
+.price__wrapper {
+  @include container;
+}
+
+.price__title {
+  margin: 0;
+  line-height: 100%;
+  @include container;
+}
+
+.price__table {
+
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.price__table-row {
+    td:nth-child(2) {
+      font-weight: 700;
+    }
+}
+
+.price__discount-hours {
+  position: relative;
+  border: 1px solid #484848;
+  font-size: 20px;
+  line-height: 27px;
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      background-color: red;
+      opacity: 0.3;
+    }
+    p {
+      margin: 0;
+    }
+}
+
+@media ($mobile-widths-only) {
+  .price {
+    padding: 70px 6.25% 19px 6.25%;
+    @include triangle-down (34px, #353535);
+  }
+
+  .price__title {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .price__table {
+    margin-bottom: 28px;
+    display: block;
+      tbody {
+        display: block;
+      }
+  }
+
+  .price__table-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+      td:first-child {
+        display: none;
+      }
+      td:nth-child(2) {
+        width: 70%;
+      }
+      td:nth-child(3) {
+        order: 1;
+      }
+      td:last-child {
+        width: 30%;
+        text-align: right;
+      }
+  }
+
+  .price__discount-hours {
+    padding: 20px 22px;
+    padding-left: 112px;
+      &::before {
+        width: 58px;
+        height: 57px;
+        left: 22px;
+      }
+  }
+}
+
+@media ($tablet-widths) {
+  .price {
+    padding: 80px 0 56px 0;
+  }
+
+  .price__title {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+
+  .price__table {
+    border-collapse: collapse;
+    margin-bottom: 9px;
+    width: 100%;
+  }
+
+  .price__table-row {
+      td {
+        padding: 14px 18px;
+        border: 1px solid #484848;
+      }
+      td:first-child {
+        text-align: center;
+        width: 70px;
+        padding: 14px 5px;
+      }
+      td:nth-child(3) {
+        width: 25%;
+        text-align: center;
+      }
+      td:last-child {
+        width: 25%;
+      }
+  }
+
+  .price__discount-hours {
+    padding: 42px 13.2% 42px 24.5%;
+      &::before {
+        width: 72px;
+        height: 71px;
+        left: 30px;
+        top: 22px;
+      }
+      p {
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 700;
+      }
+      br {
+        display: none;
+      }
+  }
+
+  .price__hidden {
+    display: none;
+  }
+}
+
+@media ($desktop-widths) {
+  .price {
+    padding: 75px 0 83px 0;
+  }
+
+  .price__title {
+    width: 100%;
+  }
+
+  .price__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .price__table {
+    width: 630px;
+    margin: 0;
+  }
+
+  .price__table-row {
+    width: 630px;
+  }
+
+  .price__discount-hours {
+    width: 270px;
+    padding: 0;
+    padding-top: 200px;
+      &::before {
+        width: 140px;
+        height: 139px;
+        left: 64px;
+        top: 34px;
+      }
+     p {
+       font-size: 20px;
+       line-height: 27px;
+       font-weight: 400;
+       width: 150px;
+       text-align: center;
+       margin: 0 auto;
+     }
+  }
+}

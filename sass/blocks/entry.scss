@@ -1,4 +1,9 @@
 @media ($mobile-widths-only) {
+  .entry {
+    @include triangle-down(34px, #f8f5f2);
+    padding-bottom: 39px;
+  }
+
   .entry__form {
     flex-direction: column;
     flex-wrap: nowrap;
@@ -24,6 +29,10 @@
 }
 
 @media ($tablet-widths) {
+  .entry {
+    margin-bottom: 76px;
+  }
+
   .entry__form {
     > input {
         &[name="name"],
@@ -59,6 +68,10 @@
 }
 
 @media ($desktop-widths) {
+  .entry {
+    margin-bottom: 87px;
+  }
+
   .form {
       > input {
          &[name="tel"] {

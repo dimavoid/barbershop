@@ -5,6 +5,20 @@
   color: #000;
 }
 
+.inner-page--work {
+  z-index: 10;
+  @include triangle-down (34px, #f8f5f2);
+    @media ($tablet-widths) {
+      @include triangle-down (41px, #f8f5f2);
+    }
+    @media ($desktop-widths) {
+      &::before,
+      &::after {
+        display: none;
+      }
+  }
+}
+
 .inner-page__header {
   @include container;
   background-color: #f8f5f2;
@@ -36,9 +50,7 @@
   }
 
   .inner-page__content {
-    @include triangle-down(34px, #f8f5f2);
     padding: 0 6.25%;
-    padding-bottom: 39px;
   }
 }
 
@@ -53,18 +65,10 @@
         font-size: 40px;
       }
   }
-
-  .inner-page__content {
-    margin-bottom: 76px;
-  }
 }
 
 @media ($desktop-widths) {
   .inner-page__header {
     margin-top: 118px;
-  }
-
-  .inner-page__content {
-    margin-bottom: 87px;
   }
 }
