@@ -69,3 +69,37 @@
       background: linear-gradient(to bottom right, transparent 49.2%, $color 50.7%);
     }
 }
+
+@mixin work($top, $left, $pseudo, $gradient) {
+  color: #fff;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 13px 0;
+  text-align: center;
+  position: absolute;
+  display: block;
+  width: 160px;
+  height: 50px;
+  top: $top;
+  left: $left;
+  background-color: #826550;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 9px;
+      height: 25px;
+      left: $pseudo;
+    }
+    &::before {
+      top: 0;
+      background: linear-gradient(to bottom $gradient, #826550 47.0%, transparent 53.0%);
+    }
+    &::after {
+      top: 25px;
+      background: linear-gradient(to top $gradient, #826550 47.0%, transparent 53.0%);
+    }
+}
