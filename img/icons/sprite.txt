@@ -1,0 +1,131 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-advantage-1 {
+    width: 95px;
+    height: 94px;
+    background-position: -10px -10px;
+}
+
+.sprite-advantage-2 {
+    width: 95px;
+    height: 88px;
+    background-position: -10px -124px;
+}
+
+.sprite-advantage-3 {
+    width: 95px;
+    height: 91px;
+    background-position: -10px -232px;
+}
+
+.sprite-beard-1 {
+    width: 52px;
+    height: 49px;
+    background-position: -10px -343px;
+}
+
+.sprite-beard-2 {
+    width: 58px;
+    height: 68px;
+    background-position: -10px -412px;
+}
+
+.sprite-beard-3 {
+    width: 63px;
+    height: 78px;
+    background-position: -10px -500px;
+}
+
+.sprite-beard-4 {
+    width: 57px;
+    height: 97px;
+    background-position: -10px -598px;
+}
+
+.sprite-beard-5 {
+    width: 46px;
+    height: 104px;
+    background-position: -10px -715px;
+}
+
+.sprite-beard-icon {
+    width: 23px;
+    height: 21px;
+    background-position: -10px -839px;
+}
+
+.sprite-clock {
+    width: 72px;
+    height: 71px;
+    background-position: -10px -880px;
+}
+
+.sprite-clock-big {
+    width: 142px;
+    height: 139px;
+    background-position: -10px -971px;
+}
+
+.sprite-clock-small {
+    width: 58px;
+    height: 57px;
+    background-position: -10px -1130px;
+}
+
+.sprite-facebook-big {
+    width: 18px;
+    height: 39px;
+    background-position: -10px -1207px;
+}
+
+.sprite-facebook-small {
+    width: 10px;
+    height: 21px;
+    background-position: -10px -1266px;
+}
+
+.sprite-insta-big {
+    width: 36px;
+    height: 36px;
+    background-position: -10px -1307px;
+}
+
+.sprite-insta-small {
+    width: 19px;
+    height: 19px;
+    background-position: -10px -1363px;
+}
+
+.sprite-login {
+    width: 16px;
+    height: 16px;
+    background-position: -10px -1402px;
+}
+
+.sprite-mustache-icon {
+    width: 45px;
+    height: 12px;
+    background-position: -10px -1438px;
+}
+
+.sprite-scissors-icon {
+    width: 21px;
+    height: 20px;
+    background-position: -10px -1470px;
+}
+
+.sprite-vk-big {
+    width: 23px;
+    height: 26px;
+    background-position: -10px -1510px;
+}
+
+.sprite-vk-small {
+    width: 15px;
+    height: 17px;
+    background-position: -10px -1556px;
+}

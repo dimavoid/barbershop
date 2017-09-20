@@ -9,13 +9,24 @@
       position: absolute;
       width: 95px;
       height: 94px;
-      background-color: red;
-      opacity: 0.3;
+      background-image: url("../img/icons/sprite.png");
     }
     p {
       font-size: 20px;
       line-height: 27px;
       margin: 0;
+    }
+}
+
+.advantages__item {
+    &:first-child::before {
+      background-position: -10px -10px;
+    }
+    &:nth-child(2)::before {
+      background-position: -10px -122px;
+    }
+    &:last-child::before {
+      background-position: -10px -231px;
     }
 }
 

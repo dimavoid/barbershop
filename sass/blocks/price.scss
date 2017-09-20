@@ -33,8 +33,7 @@
       content: "";
       position: absolute;
       display: block;
-      background-color: red;
-      opacity: 0.3;
+      background-image: url("../img/icons/sprite.png");
     }
     p {
       margin: 0;
@@ -87,6 +86,7 @@
         width: 58px;
         height: 57px;
         left: 22px;
+        background-position: -10px -1130px;
       }
   }
 }
@@ -133,6 +133,7 @@
         height: 71px;
         left: 30px;
         top: 22px;
+        background-position: -10px -880px;
       }
       p {
         font-size: 30px;
@@ -182,6 +183,7 @@
         height: 139px;
         left: 64px;
         top: 34px;
+        background-position: -10px -971px;
       }
      p {
        font-size: 20px;

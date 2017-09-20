@@ -74,25 +74,9 @@
     label {
       position: relative;
       width: 80px;
-      text-align: center;
-      text-transform: lowercase;
-      padding: 0 5px;
-      padding-top: 65px;
-      padding-bottom: 115px;
+      padding: 5px;
       margin-bottom: 5px;
       cursor: pointer;
-        &::before {
-          content: "";
-          display: block;
-          position: absolute;
-          top: 99px;
-          left: 50%;
-          bottom: 0;
-          width: 64px;
-          transform: translateX(-50%);
-          background-color: red;
-          opacity: 0.3;
-        }
     }
 }
 

@@ -11,7 +11,11 @@
   <body>
     <header class="page-header  page-header--inner">
       <div class="page-header__logo  page-header__logo--inner">
-        <img src="img/logo.svg" alt="Барбершоп «Бородинский»" width="226" height="30">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-desktop.png">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.png">
+          <img src="img/logo-mobile.svg" alt="Барбершоп «Бородинский»" width="226" height="30">
+        </picture>
       </div>
       <nav class="main-nav  main-nav--closed  main-nav--nojs">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -43,7 +47,7 @@
           <input type="tel" name="tel" placeholder="Контактный телефон">
           <input type="email" name="email" placeholder="Контактный e-mail">
           <textarea name="name" rows="3" cols="40" placeholder="Доп. информация для мастера"></textarea>
-          <fieldset class="form__model-filter">
+          <fieldset class="form__model-filter  entry__form--model-filter">
             <legend>Выберите модель бороды:</legend>
             <div class="form__input-container">
               <label><input type="radio" name="beard-model" value="" checked><span class="radio-indicator"></span>Адмирал</label>

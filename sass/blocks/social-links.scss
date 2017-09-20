@@ -24,8 +24,7 @@
       transform: translateX(-50%) translateY(-50%);
       width: 10px;
       height: 10px;
-      background-color: red;
-      opacity: 0.3;
+      background-image: url("../img/icons/sprite.png");
     }
     &:hover {
       border-color: #545454;
@@ -34,6 +33,7 @@
       border-color: #252525;
       background-color: #252525;
       color: #808080;
+      opacity: 0.3;
     }
 }
 
@@ -41,6 +41,7 @@
     &::before {
       width: 23px;
       height: 26px;
+      background-position: -10px -1510px;
     }
 }
 
@@ -48,6 +49,7 @@
     &::before {
       width: 18px;
       height: 39px;
+      background-position: -10px -1207px;
     }
 }
 
@@ -55,6 +57,7 @@
     &::before {
       width: 36px;
       height: 36px;
+      background-position: -10px -1307px;
     }
 }
 
@@ -79,6 +82,7 @@
       &::before {
         width: 15px;
         height: 17px;
+        background-position: -10px -1556px;
       }
   }
 
@@ -86,6 +90,7 @@
       &::before {
         width: 10px;
         height: 21px;
+        background-position: -10px -1266px;
       }
   }
 
@@ -93,6 +98,7 @@
       &::before {
         width: 19px;
         height: 19px;
+        background-position: -10px -1363px;
       }
   }
 }

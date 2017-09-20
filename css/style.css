@@ -156,25 +156,9 @@ img {
 .form__model-filter label {
   position: relative;
   width: 80px;
-  text-align: center;
-  text-transform: lowercase;
-  padding: 0 5px;
-  padding-top: 65px;
-  padding-bottom: 115px;
+  padding: 5px;
   margin-bottom: 5px;
   cursor: pointer; }
-  .form__model-filter label::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 99px;
-    left: 50%;
-    bottom: 0;
-    width: 64px;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    background-color: red;
-    opacity: 0.3; }
 
 .form__services-filter input[type="checkbox"] {
   display: none; }
@@ -306,8 +290,9 @@ img {
       left: 21px;
       width: 16px;
       height: 16px;
-      background-color: red;
-      opacity: 0.3; }
+      background-image: url("../img/icons/sprite.png");
+      background-position: -10px -1402px;
+      transition: 0.5s; }
 
 .stats {
   background-color: #242424; }
@@ -354,12 +339,20 @@ img {
     position: absolute;
     width: 95px;
     height: 94px;
-    background-color: red;
-    opacity: 0.3; }
+    background-image: url("../img/icons/sprite.png"); }
   .advantages__item p {
     font-size: 20px;
     line-height: 27px;
     margin: 0; }
+
+.advantages__item:first-child::before {
+  background-position: -10px -10px; }
+
+.advantages__item:nth-child(2)::before {
+  background-position: -10px -122px; }
+
+.advantages__item:last-child::before {
+  background-position: -10px -231px; }
 
 .advantages__item-title {
   font-size: 30px;
@@ -545,26 +538,29 @@ img {
             transform: translateX(-50%) translateY(-50%);
     width: 10px;
     height: 10px;
-    background-color: red;
-    opacity: 0.3; }
+    background-image: url("../img/icons/sprite.png"); }
   .social-link:hover {
     border-color: #545454; }
   .social-link:active {
     border-color: #252525;
     background-color: #252525;
-    color: #808080; }
+    color: #808080;
+    opacity: 0.3; }
 
 .social-link--vk::before {
   width: 23px;
-  height: 26px; }
+  height: 26px;
+  background-position: -10px -1510px; }
 
 .social-link--fb::before {
   width: 18px;
-  height: 39px; }
+  height: 39px;
+  background-position: -10px -1207px; }
 
 .social-link--in::before {
   width: 36px;
-  height: 36px; }
+  height: 36px;
+  background-position: -10px -1307px; }
 
 .inner-page {
   display: -webkit-box;
@@ -611,6 +607,44 @@ img {
   min-width: 320px;
   background-color: #f8f5f2; }
 
+.entry__form--model-filter label {
+  width: 80px;
+  text-align: center;
+  text-transform: lowercase;
+  padding: 65px 5px 115px 5px;
+  margin-bottom: 5px; }
+  .entry__form--model-filter label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 99px;
+    left: 50%;
+    bottom: 0;
+    width: 64px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    background-image: url("../img/icons/sprite.png"); }
+  .entry__form--model-filter label:first-child::before {
+    width: 52px;
+    height: 49px;
+    background-position: -10px -343px; }
+  .entry__form--model-filter label:nth-child(2)::before {
+    width: 58px;
+    height: 68px;
+    background-position: -10px -412px; }
+  .entry__form--model-filter label:nth-child(3)::before {
+    width: 63px;
+    height: 78px;
+    background-position: -10px -500px; }
+  .entry__form--model-filter label:nth-child(4)::before {
+    width: 57px;
+    height: 97px;
+    background-position: -10px -598px; }
+  .entry__form--model-filter label:last-child::before {
+    width: 46px;
+    height: 104px;
+    background-position: -10px -715px; }
+
 .catalog__item {
   display: -webkit-box;
   display: flex;
@@ -643,7 +677,8 @@ img {
   height: 50px;
   top: 401px;
   left: 0;
-  background-color: #826550; }
+  background-color: #826550;
+  z-index: 2; }
   .work-month::before, .work-month::after {
     content: "";
     position: absolute;
@@ -692,12 +727,28 @@ img {
     content: "";
     position: absolute;
     display: block;
-    width: 24px;
-    height: 24px;
     top: 0;
     left: 0;
-    background-color: red;
-    opacity: 0.3; }
+    background-image: url("../img/icons/sprite.png"); }
+
+.catalog__services-item--scissors::before {
+  top: 2px;
+  width: 21px;
+  height: 20px;
+  background-position: -10px -1470px; }
+
+.catalog__services-item--beard::before {
+  top: 1px;
+  width: 23px;
+  height: 21px;
+  background-position: -10px -839px; }
+
+.catalog__services-item--mustache::before {
+  top: 6px;
+  left: -12px;
+  width: 45px;
+  height: 12px;
+  background-position: -10px -1438px; }
 
 .price {
   background-color: #353535; }
@@ -726,8 +777,7 @@ img {
     content: "";
     position: absolute;
     display: block;
-    background-color: red;
-    opacity: 0.3; }
+    background-image: url("../img/icons/sprite.png"); }
   .price__discount-hours p {
     margin: 0; }
 
@@ -1031,6 +1081,12 @@ img {
     padding-right: 10px; }
   .main-nav__user-items .main-nav__user-login::before {
     top: 28px; }
+  .main-nav__user-items .main-nav__user-login:hover::before {
+    -webkit-filter: brightness(70%);
+            filter: brightness(70%); }
+  .main-nav__user-items .main-nav__user-login:active::before {
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%); }
   .stats {
     min-width: 320px;
     background-color: #353535;
@@ -1334,7 +1390,11 @@ img {
     border-left: none; }
     .catalog__item--month img {
       width: 100%;
-      height: 480px; }
+      height: 480px;
+      -o-object-fit: cover;
+         object-fit: cover;
+      -o-object-position: left;
+         object-position: left; }
   .catalog__item-wrapper {
     width: 42.1875%;
     flex-shrink: 0; }
@@ -1412,7 +1472,8 @@ img {
       width: 72px;
       height: 71px;
       left: 30px;
-      top: 22px; }
+      top: 22px;
+      background-position: -10px -880px; }
     .price__discount-hours p {
       font-size: 30px;
       line-height: 30px;
@@ -1584,6 +1645,12 @@ img {
       background-color: #fff; }
   .main-nav__user-items .main-nav__user-login::before {
     top: 28px; }
+  .main-nav__user-items .main-nav__user-login:hover::before {
+    -webkit-filter: brightness(0);
+            filter: brightness(0); }
+  .main-nav__user-items .main-nav__user-login:active::before {
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%); }
   .stats {
     display: -webkit-box;
     display: flex;
@@ -1679,7 +1746,8 @@ img {
     top: 0; }
     .reviews__author-foto img {
       width: 248px;
-      height: 160px;
+      height: 158px;
+      border: none;
       border-radius: 0;
       border-right: 1px solid #e5ddd5; }
   .reviews__btn {
@@ -1717,13 +1785,16 @@ img {
     height: 50px; }
   .social-link--vk::before {
     width: 15px;
-    height: 17px; }
+    height: 17px;
+    background-position: -10px -1556px; }
   .social-link--fb::before {
     width: 10px;
-    height: 21px; }
+    height: 21px;
+    background-position: -10px -1266px; }
   .social-link--in::before {
     width: 19px;
-    height: 19px; }
+    height: 19px;
+    background-position: -10px -1363px; }
     .inner-page--work::before, .inner-page--work::after {
       display: none; }
     .inner-page__header {
@@ -1833,7 +1904,8 @@ img {
       width: 140px;
       height: 139px;
       left: 64px;
-      top: 34px; }
+      top: 34px;
+      background-position: -10px -971px; }
     .price__discount-hours p {
       font-size: 20px;
       line-height: 27px;
@@ -1902,7 +1974,8 @@ img {
     margin-bottom: 20px; }
   .page-header__logo {
     background-color: #242424;
-    padding: 24px; }
+    padding: 24px;
+    min-width: 320px; }
     .page-header__logo img {
       width: 226px;
       height: 30px; }
@@ -1959,7 +2032,7 @@ img {
     height: 2px;
     background-color: #fff;
     box-shadow: 0 8px 00 #fff, 0 16px 00 #fff;
-    transition: background-color 0.5s, box-shadow 0.5s; }
+    transition: background-color 0.5s; }
   .main-nav--closed .main-nav__toggle:active::before {
     background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0 8px 0 rgba(255, 255, 255, 0.3), 0 16px 0 rgba(255, 255, 255, 0.3); }
@@ -2336,7 +2409,8 @@ img {
     .price__discount-hours::before {
       width: 58px;
       height: 57px;
-      left: 22px; }
+      left: 22px;
+      background-position: -10px -1130px; }
   .modal-login {
     width: 320px; }
     .modal-login h2 {

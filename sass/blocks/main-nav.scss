@@ -32,8 +32,9 @@
           left: 21px;
           width: 16px;
           height: 16px;
-          background-color: red;
-          opacity: 0.3;
+          background-image: url("../img/icons/sprite.png");
+          background-position: -10px -1402px;
+          transition: 0.5s;
         }
     }
 }
@@ -122,7 +123,7 @@
         box-shadow:
           0 8px 00 #fff,
           0 16px 00 #fff;
-        transition: background-color 0.5s, box-shadow 0.5s;
+        transition: background-color 0.5s;
       }
       &:active::before {
 
@@ -286,6 +287,12 @@
         &::before {
           top: 28px;
         }
+        &:hover::before {
+          filter: brightness(70%);
+        }
+        &:active::before {
+          filter: brightness(100%);
+        }
       }
   }
 }
@@ -332,6 +339,12 @@
       .main-nav__user-login {
         &::before {
           top: 28px;
+        }
+        &:hover::before {
+          filter: brightness(0);
+        }
+        &:active::before {
+          filter: brightness(50%);
         }
       }
   }

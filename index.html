@@ -11,7 +11,11 @@
   <body>
     <header class="page-header">
       <div class="page-header__logo">
-        <img src="img/logo.svg" alt="Барбершоп «Бородинский»" width="226" height="30">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-desktop.png">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.png">
+          <img src="img/logo-mobile.svg" alt="Барбершоп «Бородинский»" width="226" height="30">
+        </picture>
       </div>
       <nav class="main-nav  main-nav--closed  main-nav--nojs">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -119,21 +123,33 @@
           <div class="reviews__items">
             <blockquote class="reviews__item  reviews__item--1  slider__item">
               <div class="reviews__author-foto">
-                <img src="img/pic-travis.jpg" alt="Фото Трэвиса Баркера" width="50" height="33">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/reviews-tra-d.jpg">
+                  <source media="(min-width: 768px)" srcset="img/reviews-tra-t.jpg">
+                  <img src="img/reviews-tra-m.jpg" alt="Фото Трэвиса Баркера" width="50" height="33">
+                </picture>
               </div>
               <cite class="reviews__author-name">Трэвис Баркер</cite>
               <p>Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
             </blockquote>
             <blockquote class="reviews__item  reviews__item--2  slider__item">
               <div class="reviews__author-foto">
-                <img src="img/pic-travis.jpg" alt="Фото Саши Мальцева" width="50" height="33">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/reviews-tra-d.jpg">
+                  <source media="(min-width: 768px)" srcset="img/reviews-tra-t.jpg">
+                  <img src="img/reviews-tra-m.jpg" alt="Фото Трэвиса Баркера" width="50" height="33">
+                </picture>
               </div>
               <cite class="reviews__author-name">Саша Мальцев</cite>
               <p>Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?</p>
             </blockquote>
             <blockquote class="reviews__item  reviews__item--3  slider__item">
               <div class="reviews__author-foto">
-                <img src="img/pic-travis.jpg" alt="Фото Винстона Синего" width="50" height="33">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/reviews-tra-d.jpg">
+                  <source media="(min-width: 768px)" srcset="img/reviews-tra-t.jpg">
+                  <img src="img/reviews-tra-m.jpg" alt="Фото Трэвиса Баркера" width="50" height="33">
+                </picture>
               </div>
               <cite class="reviews__author-name">Винстон Синий</cite>
               <p>Как только заростаю и волосы начинают мешать видеть — бегом в Бородинский!</p>

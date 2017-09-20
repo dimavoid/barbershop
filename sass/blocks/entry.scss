@@ -1,3 +1,49 @@
+.entry__form--model-filter {
+    label {
+      width: 80px;
+      text-align: center;
+      text-transform: lowercase;
+      padding: 65px 5px 115px 5px;
+      margin-bottom: 5px;
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 99px;
+          left: 50%;
+          bottom: 0;
+          width: 64px;
+          transform: translateX(-50%);
+          background-image: url("../img/icons/sprite.png");
+        }
+        &:first-child::before {
+          width: 52px;
+          height: 49px;
+          background-position: -10px -343px;
+        }
+        &:nth-child(2)::before {
+          width: 58px;
+          height: 68px;
+          background-position: -10px -412px;
+        }
+        &:nth-child(3)::before {
+          width: 63px;
+          height: 78px;
+          background-position: -10px -500px;
+        }
+        &:nth-child(4)::before {
+          width: 57px;
+          height: 97px;
+          background-position: -10px -598px;
+        }
+        &:last-child::before {
+          width: 46px;
+          height: 104px;
+          background-position: -10px -715px;
+        }
+    }
+}
+
 @media ($mobile-widths-only) {
   .entry {
     @include triangle-down(34px, #f8f5f2);

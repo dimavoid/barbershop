@@ -24,6 +24,7 @@
 
 .work-month {
   @include work(401px, 0, 160px, right);
+  z-index: 2;
 }
 
 .catalog__item-descr {
@@ -60,12 +61,37 @@
       content: "";
       position: absolute;
       display: block;
-      width: 24px;
-      height: 24px;
       top: 0;
       left: 0;
-      background-color: red;
-      opacity: 0.3;
+      background-image: url("../img/icons/sprite.png");
+    }
+}
+
+.catalog__services-item--scissors {
+    &::before {
+      top: 2px;
+      width: 21px;
+      height: 20px;
+      background-position: -10px -1470px;
+    }
+}
+
+.catalog__services-item--beard {
+    &::before {
+      top: 1px;
+      width: 23px;
+      height: 21px;
+      background-position: -10px -839px;
+    }
+}
+
+.catalog__services-item--mustache {
+    &::before {
+      top: 6px;
+      left: -12px;
+      width: 45px;
+      height: 12px;
+      background-position: -10px -1438px;
     }
 }
 
@@ -111,6 +137,8 @@
         // width: 42.1875%;
         width: 100%;
         height: 480px;
+        object-fit: cover;
+        object-position: left;
       }
   }
 
