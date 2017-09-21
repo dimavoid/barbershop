@@ -106,26 +106,32 @@
     background-position: -10px -1402px;
 }
 
+.sprite-logo-brown {
+    width: 16px;
+    height: 16px;
+    background-position: -10px -1438px;
+}
+
 .sprite-mustache-icon {
     width: 45px;
     height: 12px;
-    background-position: -10px -1438px;
+    background-position: -10px -1474px;
 }
 
 .sprite-scissors-icon {
     width: 21px;
     height: 20px;
-    background-position: -10px -1470px;
+    background-position: -10px -1506px;
 }
 
 .sprite-vk-big {
     width: 23px;
     height: 26px;
-    background-position: -10px -1510px;
+    background-position: -10px -1546px;
 }
 
 .sprite-vk-small {
     width: 15px;
     height: 17px;
-    background-position: -10px -1556px;
+    background-position: -10px -1592px;
 }

@@ -287,11 +287,29 @@
         &::before {
           top: 28px;
         }
+        &::after {
+          content: "";
+          position: absolute;
+          top: 28px;
+          left: 21px;
+          width: 16px;
+          height: 16px;
+          background-image: url("../img/icons/sprite.png");
+          background-position: -10px -1438px;
+          transition: 0.5s;
+          opacity: 0;
+        }
         &:hover::before {
-          filter: brightness(70%);
+          opacity: 0;
+        }
+        &:hover::after {
+          opacity: 1;
         }
         &:active::before {
-          filter: brightness(100%);
+          opacity: 1;
+        }
+        &:active::after {
+          opacity: 0;
         }
       }
   }
@@ -340,8 +358,12 @@
         &::before {
           top: 28px;
         }
+        &::after {
+          display: none;
+        }
         &:hover::before {
           filter: brightness(0);
+          opacity: 1;
         }
         &:active::before {
           filter: brightness(50%);

@@ -550,7 +550,7 @@ img {
 .social-link--vk::before {
   width: 23px;
   height: 26px;
-  background-position: -10px -1510px; }
+  background-position: -10px -1546px; }
 
 .social-link--fb::before {
   width: 18px;
@@ -735,7 +735,7 @@ img {
   top: 2px;
   width: 21px;
   height: 20px;
-  background-position: -10px -1470px; }
+  background-position: -10px -1506px; }
 
 .catalog__services-item--beard::before {
   top: 1px;
@@ -748,7 +748,7 @@ img {
   left: -12px;
   width: 45px;
   height: 12px;
-  background-position: -10px -1438px; }
+  background-position: -10px -1474px; }
 
 .price {
   background-color: #353535; }
@@ -1081,12 +1081,25 @@ img {
     padding-right: 10px; }
   .main-nav__user-items .main-nav__user-login::before {
     top: 28px; }
+  .main-nav__user-items .main-nav__user-login::after {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 21px;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/icons/sprite.png");
+    background-position: -10px -1438px;
+    transition: 0.5s;
+    opacity: 0; }
   .main-nav__user-items .main-nav__user-login:hover::before {
-    -webkit-filter: brightness(70%);
-            filter: brightness(70%); }
+    opacity: 0; }
+  .main-nav__user-items .main-nav__user-login:hover::after {
+    opacity: 1; }
   .main-nav__user-items .main-nav__user-login:active::before {
-    -webkit-filter: brightness(100%);
-            filter: brightness(100%); }
+    opacity: 1; }
+  .main-nav__user-items .main-nav__user-login:active::after {
+    opacity: 0; }
   .stats {
     min-width: 320px;
     background-color: #353535;
@@ -1645,9 +1658,12 @@ img {
       background-color: #fff; }
   .main-nav__user-items .main-nav__user-login::before {
     top: 28px; }
+  .main-nav__user-items .main-nav__user-login::after {
+    display: none; }
   .main-nav__user-items .main-nav__user-login:hover::before {
     -webkit-filter: brightness(0);
-            filter: brightness(0); }
+            filter: brightness(0);
+    opacity: 1; }
   .main-nav__user-items .main-nav__user-login:active::before {
     -webkit-filter: brightness(50%);
             filter: brightness(50%); }
@@ -1786,7 +1802,7 @@ img {
   .social-link--vk::before {
     width: 15px;
     height: 17px;
-    background-position: -10px -1556px; }
+    background-position: -10px -1592px; }
   .social-link--fb::before {
     width: 10px;
     height: 21px;
