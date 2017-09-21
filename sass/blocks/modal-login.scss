@@ -45,6 +45,17 @@
     }
 }
 
+.form label input:checked + .checkbox-indicator,
+.form label input:checked + .radio-indicator {
+  border-color: #d5c9bd;
+}
+
+.form label input:checked + .checkbox-indicator::before,
+.form label input:checked + .radio-indicator::before {
+  visibility: visible;
+  opacity: 1;
+}
+
 .modal-login__restore {
   width: 40%;
   text-align: right;
